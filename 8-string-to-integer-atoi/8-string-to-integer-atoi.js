@@ -32,7 +32,6 @@ const myAtoi = function(s) {
             break;
         }
     }
-    console.log(answer)
     answer = sign?Number(answer)*-1:Number(answer);
     if(answer<minNum){
         return minNum;
