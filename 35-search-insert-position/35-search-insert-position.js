@@ -20,7 +20,6 @@ var searchInsert = function(nums, target) {
         if(nums[nums.length-1]<target){
             return left+1;
         }
-        console.log(left,right)
         return left;
     }
 };
