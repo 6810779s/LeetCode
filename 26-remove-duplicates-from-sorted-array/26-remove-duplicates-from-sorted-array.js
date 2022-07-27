@@ -7,6 +7,7 @@ var removeDuplicates = function(nums) {
     while(idx!==nums.length){
             if(nums[idx-1]===nums[idx]){
                 nums.splice(idx,1)
+                continue;
             }else{
                 idx++;
             }
