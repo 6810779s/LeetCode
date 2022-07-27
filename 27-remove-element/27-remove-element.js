@@ -11,19 +11,27 @@ var removeElement = function(nums, val) {
     //         continue;
     //     }
     // }
-    let k=0;
-    for(let i=0;i<nums.length;i++){
+    // let k=0;
+    // for(let i=0;i<nums.length;i++){
+    //     if(nums[i]===val){
+    //         continue;
+    //     }else{
+    //         if(nums[k]===val){
+    //             nums[k]=nums[i];
+    //             nums[i]=val;
+    //         }else{
+    //             nums[k]=nums[i];
+    //         }
+    //         k++;
+    //     }
+    // }
+    // return k;
+    for (let i=0;i<nums.length;i++){
         if(nums[i]===val){
-            continue;
+            nums.splice(i,1);
+            i-=1;
         }else{
-            if(nums[k]===val){
-                nums[k]=nums[i];
-                nums[i]=val;
-            }else{
-                nums[k]=nums[i];
-            }
-            k++;
+            continue;
         }
     }
-    return k;
 };
