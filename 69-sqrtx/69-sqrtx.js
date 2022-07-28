@@ -22,7 +22,5 @@ var mySqrt = function(x) {
         
     }
     return start;
-    
-    
 };
 
