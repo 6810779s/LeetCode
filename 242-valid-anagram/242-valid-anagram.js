@@ -5,10 +5,12 @@
  */
 var isAnagram = function(s, t) {
     if(s.length!==t.length) return false
-    const arr1=s.split("").sort();
-    const arr2=t.split("").sort();
-    for(let i=0;i<arr1.length;i++){
-        if(arr1[i]!==arr2[i]) return false;
+    for(let i=0;i<s.length;i++){
+        if(s.includes(t[i])){
+            s=s.replace(t[i],' ');
+        }else{
+            return false
+        }
     }
     return true;
 };
