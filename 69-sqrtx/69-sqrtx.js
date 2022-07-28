@@ -7,7 +7,7 @@
 var mySqrt = function(x) {
     if(x===0||x===1) return x;
     let start=0;
-    let end=x;
+    let end=parseInt(x/2)+1;
     let num=0;
     
     while(end-start>1){
