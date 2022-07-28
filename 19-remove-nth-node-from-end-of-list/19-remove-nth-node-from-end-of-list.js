@@ -21,10 +21,7 @@ var removeNthFromEnd = function(head, n) {
     let prev=head,next=head.next;
     let num= numArr.length-n+1;
     
-    console.log(head)
     while(next){
-        console.log("prev:",prev,"next:",next,);
-        console.log("numArr:",numArr)
           if(numArr.length===n){
               prev.next=next.next;
           }else{
