@@ -10,7 +10,6 @@ var isPalindrome = function(s) {
             new_str+=s[i].toLowerCase();
         }
     }
-    console.log(new_str);
     
     let left=0;
     let right=new_str.length-1;
@@ -19,8 +18,6 @@ var isPalindrome = function(s) {
             left++;
             right--;
         }else{
-            console.log("left:",left,"right:",right)
-            console.log("new_str[right]",new_str[right],"new_str[left]",new_str[left]);
             return false
         }
     }
