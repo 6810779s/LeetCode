@@ -16,31 +16,7 @@ class Solution(object):
             dic_cnt["u"]=dic_cnt_copy["i"]+dic_cnt_copy["o"]
         return sum(dic_cnt.values())%(10**9 + 7)
     
-    
-    
-    
-#     perms = {'a' : 1,
-#                  'e' : 1,
-#                  'i' : 1,
-#                  'o' : 1,
-#                  'u' :1 }
-        
-#         for cur in range(1, n):
-            
-#             temp = perms.copy()
-            
-            
-#             perms['a'] = (temp['e'] + temp['i'] + temp['u']) %  (10 ** 9 + 7)
-#             perms['e'] = (temp['i'] + temp['a']) % (10 ** 9 + 7)
-#             perms['i'] = (temp['e'] + temp['o']) % (10 ** 9 + 7)
-#             perms['o'] = temp['i'] % (10 ** 9 + 7)
-#             perms['u'] = (temp['i'] + temp['o']) % (10 ** 9 + 7)
-            
-        
-#         return sum(perms.values()) % (10 ** 9 + 7) 
-#         arr=["a","e","i","o","u"]
-#         dic={"a":["e"],"e":["a","i"],"i":["a","e","o","u"],"o":["i","u"],"u":["a"]}
-#         lst=[]
+
         
 #         def dfs(string,idx):
 #             if len(string)==n:
