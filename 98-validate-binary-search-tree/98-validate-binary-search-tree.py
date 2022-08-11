@@ -8,9 +8,6 @@ class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def rec(node, left, right):
             if not node: return True
-            print("node.val:",str(node.val))
-            print("left:",left)
-            print("right:",right)
             if node.val<=left or node.val>=right:
                 return False
             
