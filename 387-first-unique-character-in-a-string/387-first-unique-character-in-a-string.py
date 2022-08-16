@@ -7,8 +7,6 @@ class Solution:
         
         while idx<=len(s):
             search=s[idx-1]
-            print("idx:",idx)
-            print("search:",search)
             if search not in s[idx:] and search not in exit:
                 return idx-1
             else:
