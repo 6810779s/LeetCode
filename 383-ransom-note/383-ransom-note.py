@@ -8,14 +8,5 @@ class Solution:
             else:
                 return False
         return True
-        
-#         lst=list(permutations(magazine,len(ransomNote)))
-#         result=[]
-#         for i in lst:
-#             result.append(''.join(i))
-        
-#         print(result)
-#         if ransomNote in result:
-#             return True
-#         return False
+
         
