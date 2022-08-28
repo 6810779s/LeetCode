@@ -1,4 +1,3 @@
-from collections import deque
 class Solution:
     def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
         m = len(mat)
