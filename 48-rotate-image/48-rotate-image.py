@@ -4,13 +4,21 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
         n=len(matrix)
-        
+        dic={}
+        d=n-1
         for i in range(n):
-            for j in range(i):
-                print("i:",i,"j:",j)
-                tmp=matrix[i][j]
-                matrix[i][j]=matrix[j][i]
-                matrix[j][i]=tmp
+            for j in range(n):
+                dic[(j,d-i)]=matrix[j][d-i]
+                
+                if (i,j) in dic:
+                    matrix[j][d-i]=dic[(i,j)]
+                else:
+                    matrix[j][d-i]=matrix[i][j]
         
-        for row in matrix:
-            row.reverse()
+        
+                
+            
+            
+            
+            
+            
