@@ -1,19 +1,23 @@
 class Solution:
-    def countAndSay(self, n: int) -> str:
+    def countAndSay(self, n: int) -> str:    
         if n==1:
             return "1"
-        x=self.countAndSay(n-1)
-        s=""
-        y=x[0]
-        ct=1
-        for i in range(1,len(x)):
-            if x[i]==y:
-                ct+=1
-            else:
-                s+=str(ct)
-                s+=str(y)
-                y=x[i]
-                ct=1
-        s+=str(ct)
-        s+=str(y)
-        return s
+
+        string="1"
+        
+        for i in range(2,n+1):
+            res=""
+            num=""
+            cnt=1
+            for j in range(len(string)):
+                if string[j]==num:
+                    cnt+=1
+                else:
+                    if num:
+                        res=res+str(cnt)+num
+                        num=string[j]
+                        cnt=1
+                    else:
+                        num=string[j]
+            string=res+str(cnt)+num
+        return string
